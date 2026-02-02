@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Weatherhead Fund</title>
+    <meta name="description" content="Get in touch with The Weatherhead Fund. Find our meeting information, email, and sign up for our mailing list.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Weatherhead Fund Logo">
+                <span>The Weatherhead Fund</span>
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="sectors.html" class="nav-link">Sectors</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="placements.html" class="nav-link">Placements</a></li>
+                <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
+                <li><a href="professional-development.html" class="nav-link">Development</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with The Weatherhead Fund.</p>
+        </div>
+    </header>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div>
+                        <span class="section-label">Get in Touch</span>
+                        <h2>We'd Love to Hear From You</h2>
+                        <p>Whether you're interested in joining, have questions about our fund, or want to connect as an alumnus or industry professional, we're here to help.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:weatherheadfund@case.edu" style="color: var(--dark-navy);">weatherheadfund@case.edu</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Meeting Location</h4>
+                            <p>Peter B. Lewis Building (PBL), Room 501<br>Case Western Reserve University<br>Cleveland, OH 44106</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Weekly Meetings</h4>
+                            <p>Every week, 6:00 PM - 7:00 PM<br><strong>Dress Code:</strong> Business Casual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 25px;">Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@case.edu">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mailing List -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <span class="section-label">Stay Updated</span>
+                <h2>Join Our Mailing List</h2>
+                <p>Sign up to receive updates about recruitment, events, and news from The Weatherhead Fund.</p>
+                <form class="mailing-list-form" style="margin-top: 30px;">
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                        <input type="email" placeholder="Enter your email address" required style="flex: 1; min-width: 250px; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 6px; font-size: 1rem;">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 15px;">We respect your privacy and will never share your information.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meeting Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Meetings</span>
+                <h2>Weekly Meeting Details</h2>
+                <p>Our general body meetings are held weekly during the academic year.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="card-icon" style="margin: 0 auto 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h4>When</h4>
+                        <p>Weekly meetings<br>6:00 PM - 7:00 PM</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="card-icon" style="margin: 0 auto 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h4>Where</h4>
+                        <p>PBL 501<br>Peter B. Lewis Building</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="card-icon" style="margin: 0 auto 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                            </svg>
+                        </div>
+                        <h4>Dress Code</h4>
+                        <p>Business Casual<br>Professional Attire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="feature-item" style="margin-bottom: 20px;">
+                    <div class="feature-content" style="width: 100%;">
+                        <h4>How do I join The Weatherhead Fund?</h4>
+                        <p>We recruit new members at the beginning of each semester. Check our <a href="recruitment.html" style="color: var(--dark-navy); font-weight: 600;">Recruitment page</a> for information about the application process and timeline.</p>
+                    </div>
+                </div>
+                <div class="feature-item" style="margin-bottom: 20px;">
+                    <div class="feature-content" style="width: 100%;">
+                        <h4>Do I need to be a business major?</h4>
+                        <p>No! We welcome students from all majors who have a genuine interest in investing and finance. Many of our successful members have come from non-business backgrounds.</p>
+                    </div>
+                </div>
+                <div class="feature-item" style="margin-bottom: 20px;">
+                    <div class="feature-content" style="width: 100%;">
+                        <h4>What is the time commitment?</h4>
+                        <p>Members are expected to attend weekly meetings (1 hour) and participate in sector work throughout the semester. Total commitment is typically 3-5 hours per week depending on role.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-content" style="width: 100%;">
+                        <h4>Can freshmen apply?</h4>
+                        <p>Yes! We encourage freshmen to apply. Many of our most successful members joined in their first year and have had the opportunity to grow within the organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="assets/images/logo.png" alt="Weatherhead Fund Logo" style="height: 40px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>A student-run investment fund at Case Western Reserve University's Weatherhead School of Management.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="sectors.html">Sectors</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                        <li><a href="professional-development.html">Development</a></li>
+                        <li><a href="placements.html">Placements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="https://case.edu" target="_blank">Case Western Reserve</a></li>
+                        <li><a href="https://weatherhead.case.edu" target="_blank">Weatherhead School</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Weatherhead Fund. All rights reserved.</p>
+                <p>Case Western Reserve University | Cleveland, OH</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
