@@ -3,240 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | The Weatherhead Fund</title>
-    <meta name="description" content="Learn about The Weatherhead Fund's mission, history, and what we offer to members.">
+    <title>About | The Weatherhead Fund</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/images/logo.png" alt="Weatherhead Fund Logo">
-                <span>The Weatherhead Fund</span>
-            </a>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="sectors.html" class="nav-link">Sectors</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="placements.html" class="nav-link">Placements</a></li>
-                <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
-                <li><a href="professional-development.html" class="nav-link">Development</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Weatherhead Fund Logo">
+        </a>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+            <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="for-firms.html" class="nav-link">For Firms</a></li>
+            <li><a href="join.html" class="nav-link">Join / Apply</a></li>
+        </ul>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1>About Us</h1>
-            <p>Discover our mission, history, and what makes The Weatherhead Fund unique.</p>
-        </div>
-    </header>
-
-    <!-- Mission Section -->
-    <section class="section">
-        <div class="container">
-            <div class="about-intro">
-                <div class="about-content">
-                    <span class="section-label">Our Mission</span>
-                    <h2>Developing Exceptional Investors</h2>
-                    <p>The Weatherhead Fund is a student-run investment organization at Case Western Reserve University's Weatherhead School of Management. We manage a $1.3 million long-only public equities portfolio using fundamental investing principles.</p>
-                    <p>Our mission is twofold: to provide members with hands-on experience in equity research and portfolio management, and to prepare them for successful careers in investment banking, private equity, and asset management.</p>
-                    <p>Each semester, analysts from our six sector verticals conduct deep-dive research and pitch one stock for potential inclusion in the portfolio. This rigorous process mirrors the work done at professional investment firms and provides invaluable experience for our members.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://case.edu/umc/sites/case.edu.umc/files/styles/hero_image/public/2019-04/peter-b-lewis-building-sunset.jpg" alt="Weatherhead School of Management">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- History Section -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Our History</span>
-                <h2>Since 2011</h2>
-                <p>From humble beginnings to managing over a million dollars in assets.</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2011</span>
-                        <h4>Founded</h4>
-                        <p>The Weatherhead Fund was established by a group of ambitious students at the Weatherhead School of Management.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2015</span>
-                        <h4>Growth & Expansion</h4>
-                        <p>Expanded to six specialized sector verticals, allowing for more focused and expert coverage of the equity markets.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">2020</span>
-                        <h4>$1M AUM Milestone</h4>
-                        <p>Reached over $1 million in assets under management, cementing our position as a leading student investment fund.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">Today</span>
-                        <h4>$1.3M AUM</h4>
-                        <p>Managing a $1.3M portfolio with a strong track record of developing finance professionals who go on to top firms.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We Offer -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">What We Offer</span>
-                <h2>A Comprehensive Experience</h2>
-                <p>We provide members with the skills, knowledge, and network needed to succeed in finance.</p>
-            </div>
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Mentorship</h4>
-                        <p>Receive guidance from senior members who have navigated the recruiting process and secured top positions in finance.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Financial Modeling Training</h4>
-                        <p>Learn to build sophisticated financial models including DCF, LBO, M&A, and comparable company analyses.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Speaker Events</h4>
-                        <p>Hear from industry professionals including investment bankers, portfolio managers, and private equity professionals.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Networking Opportunities</h4>
-                        <p>Connect with alumni working at top firms and build relationships that will support your career for years to come.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Interview Preparation</h4>
-                        <p>Practice technical and behavioral interviews with mock interviews and feedback from experienced members.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Real Investment Experience</h4>
-                        <p>Make actual investment decisions with real capital, building a track record and gaining practical experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section section-dark">
-        <div class="container text-center">
-            <h2>Ready to Join?</h2>
-            <p style="max-width: 600px; margin: 0 auto 30px;">Take the first step toward a career in finance by becoming a member of The Weatherhead Fund.</p>
-            <a href="recruitment.html" class="btn btn-gold">View Recruitment Info</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo">
-                        <img src="assets/images/logo.png" alt="Weatherhead Fund Logo" style="height: 40px; filter: brightness(0) invert(1);">
-                    </a>
-                    <p>A student-run investment fund at Case Western Reserve University's Weatherhead School of Management.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="sectors.html">Sectors</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="recruitment.html">Recruitment</a></li>
-                        <li><a href="professional-development.html">Development</a></li>
-                        <li><a href="placements.html">Placements</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="https://case.edu" target="_blank">Case Western Reserve</a></li>
-                        <li><a href="https://weatherhead.case.edu" target="_blank">Weatherhead School</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 The Weatherhead Fund. All rights reserved.</p>
-                <p>Case Western Reserve University | Cleveland, OH</p>
-            </div>
-        </div>
-    </footer>
+    <div class="page-container">
+        <section class="content-section">
+            <h1 style="margin-bottom: 30px;">About The Fund</h1>
+            <p style="font-size: 1.1rem; max-width: 800px; margin-bottom: 20px;">
+                The Weatherhead Fund is a student-run investment fund at Case Western Reserve University managing a $1.3M long-only public equities portfolio.
+                We combine hands-on portfolio management with comprehensive professional development to prepare our members for careers in finance.
+            </p>
+            
+            <h3 style="margin-top: 40px; margin-bottom: 15px;">Our Mission</h3>
+            <p style="margin-bottom: 20px;">
+                To empower students to become exceptional investors and finance professionals through hands-on experience and rigorous training in fundamental equity research and portfolio management.
+            </p>
+        </section>
+    </div>
 
     <script src="js/main.js"></script>
+    <script>
+        // Simple Toggle Script if main.js is not yet updated
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        if(navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
