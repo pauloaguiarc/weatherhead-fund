@@ -12,7 +12,7 @@
     --font-sans: 'Inter', sans-serif;
     
     --container-width: 1200px;
-    --nav-height: 80px;
+    --nav-height: 120px;
 }
 
 /* Reset */
@@ -78,7 +78,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo img {
-    height: 40px;
+    height: 96px;
+    /* allow transparent logos to show clearly */
+    display: block;
+}
+
+/* Hide logo on scroll without affecting layout: use opacity and transform only */
+.nav-logo {
+    display: inline-block;
+    transition: opacity 200ms ease, transform 200ms ease;
+}
+.nav-logo.hidden-on-scroll {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
 }
 
 .nav-toggle {
@@ -131,8 +144,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Landing Page (Home) */
 .landing-page {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    overflow: visible;
+}
+
+.landing-api-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -145,6 +167,22 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     filter: blur(8px) brightness(0.6);
     transform: scale(1.05); /* Prevent blur edges */
+    z-index: 0;
+}
+
+/* Unblurred bottom strip that sits above the blurred image to create a sharp edge */
+.landing-api-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px; /* disabled - no visible unblurred strip */
+    object-fit: cover;
+    object-position: bottom center;
+    transform: scale(1.05);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
 }
 
 .landing-content {
@@ -174,6 +212,50 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+/* Custom dark-themed sections for homepage */
+.dark-section {
+    background: #000;
+    color: #d9d9d9;
+}
+.dark-section .section-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+.dark-section img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+.dark-section .text {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    width: 40%;
+    background: rgba(10,10,10,0.7);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+.dark-section .image-title {
+    color: #e6e6e6;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+.dark-section .image-subtitle {
+    color: #a8a8a8;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .dark-section .section-inner { display: block; }
+    .dark-section img { height: auto; }
+    .dark-section .text { position: static; width: 100%; margin-top: -60px; background: rgba(0,0,0,0.6); }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .navbar { padding: 0 20px; }
@@ -200,4 +282,63 @@ h1, h2, h3, h4, h5, h6 {
     .landing-title {
         font-size: 2rem;
     }
+
+
+/* Footer */
+.site-footer {
+    background: #4a4a4a; /* lighter gray */
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    text-align: center;
+}
+.site-footer .footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+.site-footer .footer-links {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.site-footer .footer-links a {
+    color: #ffffff;
+    margin: 0 6px;
+    font-weight: 500;
+}
+.site-footer .footer-links span { color: #ccc; }
+.site-footer .social-icons {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.site-footer .social-icons a {
+    display: inline-block;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+}
+.site-footer .social-icons svg {
+    width: 16px !important;
+    height: 16px !important;
+    fill: currentColor;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .site-footer { padding: 28px 12px; }
+    .site-footer .footer-title { font-size: 1.05rem; }
+}
+    /* smaller logo on mobile */
+    .nav-logo img { height: 56px; }
 }
