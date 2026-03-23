@@ -578,3 +578,51 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-gold);
 }
 
+/* =========================
+   PUBLICATIONS PAGE
+========================= */
+
+.publications-page {
+    max-width: 900px;
+}
+
+.publications-block {
+    margin-top: 28px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.publications-block h2 {
+    font-family: var(--font-sans);
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.publications-subtitle {
+    color: var(--color-gray-medium);
+    margin-bottom: 22px;
+}
+
+.pitch-list {
+    display: grid;
+    gap: 12px;
+}
+
+.pitch-list a {
+    color: var(--color-gold);
+    font-weight: 500;
+}
+
+.pitch-list a:hover {
+    color: #fff;
+}
+
+.pitch-list .pitch-link-disabled {
+    color: var(--color-gray-medium);
+    pointer-events: none;
+    cursor: default;
+}
+
