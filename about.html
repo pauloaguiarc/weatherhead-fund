@@ -31,30 +31,56 @@
     </nav>
 
     <div class="page-container">
-        <section class="content-section">
-            <h1 style="margin-bottom: 30px;">About The Fund</h1>
-            <p style="font-size: 1.1rem; max-width: 800px; margin-bottom: 20px;">
-                The Weatherhead Fund is a student-run investment fund at Case Western Reserve University managing a $1.3M long-only public equities portfolio.
-                We combine hands-on portfolio management with comprehensive professional development to prepare our members for careers in finance.
-            </p>
-            
-            <h3 style="margin-top: 40px; margin-bottom: 15px;">Our Mission</h3>
-            <p style="margin-bottom: 20px;">
-                To empower students to become exceptional investors and finance professionals through hands-on experience and rigorous training in fundamental equity research and portfolio management.
-            </p>
+        <section class="content-section about-page">
+            <h1>About Us</h1>
+
+            <div class="about-hero-card">
+                <div class="about-hero-image">
+                    <img src="assets/images/executive.jpeg" alt="Weatherhead Fund members">
+                </div>
+                <div class="about-hero-text">
+                    <h2>History &amp; Mission</h2>
+                    <p>
+                        The Weatherhead Fund is Case Western Reserve University's student-run investment organization,
+                        where members develop as investors through hands-on equity research, stock pitching, and active
+                        portfolio discussion.
+                    </p>
+                    <p>
+                        Our mission is to provide an authentic, practical investing experience while cultivating
+                        curiosity, analytical rigor, and long-term learning. We train students from the ground up and
+                        support their growth through mentorship, leadership, and exposure to industry professionals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-section-card">
+                <h2>Organization</h2>
+                <p>
+                    Analysts are placed into sector-focused verticals where they collaborate in small teams to source,
+                    evaluate, and debate investment ideas. Each vertical is guided by experienced student leaders and
+                    contributes research to the broader investment process.
+                </p>
+                <p>
+                    Across the fund, members build technical and communication skills by performing fundamental
+                    analysis, creating valuation work, and presenting recommendations to peers and leadership.
+                </p>
+            </div>
+
+            <div class="about-section-card">
+                <h2>Process</h2>
+                <p>
+                    Admission is selective and focused on motivated underclassmen who demonstrate strong curiosity,
+                    coachability, and commitment. We do not require prior finance experience.
+                </p>
+                <p>
+                    New members begin with a structured education track that covers accounting, valuation, and markets.
+                    Following training, members transition into analyst roles where they apply these tools through live
+                    company research and formal pitch discussions.
+                </p>
+            </div>
         </section>
     </div>
 
     <script src="js/main.js"></script>
-    <script>
-        // Simple Toggle Script if main.js is not yet updated
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        if(navToggle && navMenu) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-        }
-    </script>
 </body>
 </html>
