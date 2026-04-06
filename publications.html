@@ -44,25 +44,133 @@
                     See the most recent pitches from each Weatherhead Fund vertical.
                 </p>
 
-                <ul class="pitch-list">
-                    <li><a href="assets/pitch-decks/2.05.2026%20-%20$WING%20Buy%20vF.pdf" target="_blank"
-                            rel="noopener noreferrer">Consumer - WING</a></li>
-                    <li><a href="assets/pitch-decks/2.19.2026%20$FDX%20Buy%20vF.pdf" target="_blank"
-                            rel="noopener noreferrer">Industrials - FDX</a></li>
-                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true"
-                            onclick="return false;">Healthcare - Pending</a></li>
-                    <li><a href="assets/pitch-decks/2.26.2026%20$RELY%20Buy%20vF.pdf" target="_blank"
-                            rel="noopener noreferrer">Financial Technology - RELY</a></li>
-                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true"
-                            onclick="return false;">Financial Institutions &amp; REITs - Pending</a></li>
-                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true"
-                            onclick="return false;">Technology, Media &amp; Telecommunications - Pending</a></li>
-                </ul>
+                <div class="pitch-grid">
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <img src="assets/pitch-previews/wing-preview.jpg" alt="WING Pitch Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="pitch-preview-placeholder" style="display:none;">
+                                <div>📊</div>
+                                <div>WING Pitch Deck</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Consumer</div>
+                            <h3 class="pitch-title">WING - Buy Recommendation</h3>
+                            <a href="assets/pitch-decks/2.05.2026%20-%20$WING%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer" class="pitch-link">
+                                View Full Pitch →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <img src="assets/pitch-previews/fdx-preview.jpg" alt="FDX Pitch Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="pitch-preview-placeholder" style="display:none;">
+                                <div>📊</div>
+                                <div>FDX Pitch Deck</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Industrials</div>
+                            <h3 class="pitch-title">FDX - Buy Recommendation</h3>
+                            <a href="assets/pitch-decks/2.19.2026%20$FDX%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer" class="pitch-link">
+                                View Full Pitch →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <img src="assets/pitch-previews/rely-preview.jpg" alt="RELY Pitch Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="pitch-preview-placeholder" style="display:none;">
+                                <div>📊</div>
+                                <div>RELY Pitch Deck</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Financial Technology</div>
+                            <h3 class="pitch-title">RELY - Buy Recommendation</h3>
+                            <a href="assets/pitch-decks/2.26.2026%20$RELY%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer" class="pitch-link">
+                                View Full Pitch →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <div class="pitch-preview-placeholder">
+                                <div>📊</div>
+                                <div>Coming Soon</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Healthcare</div>
+                            <h3 class="pitch-title">Healthcare Pitch</h3>
+                            <a href="#" class="pitch-link pitch-link-disabled" aria-disabled="true" onclick="return false;">
+                                Pending - Coming Soon
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <div class="pitch-preview-placeholder">
+                                <div>📊</div>
+                                <div>Coming Soon</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Financial Institutions &amp; REITs</div>
+                            <h3 class="pitch-title">Financial Institutions Pitch</h3>
+                            <a href="#" class="pitch-link pitch-link-disabled" aria-disabled="true" onclick="return false;">
+                                Pending - Coming Soon
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pitch-card">
+                        <div class="pitch-preview">
+                            <img src="assets/pitch-previews/okta-preview.jpg" alt="OKTA Pitch Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="pitch-preview-placeholder" style="display:none;">
+                                <div>📊</div>
+                                <div>OKTA Pitch Deck</div>
+                            </div>
+                        </div>
+                        <div class="pitch-info">
+                            <div class="pitch-sector">Technology, Media &amp; Telecommunications</div>
+                            <h3 class="pitch-title">OKTA - Buy Recommendation</h3>
+                            <a href="assets/pitch-decks/03.26.2026 - $OKTA BUY vF.pdf" target="_blank" rel="noopener noreferrer" class="pitch-link">
+                                View Full Pitch →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fallback list view for older browsers -->
+                <div class="pitch-list" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <div style="color: var(--color-gray-medium); font-size: 0.9rem; margin-bottom: 12px;">Alternative list view:</div>
+                    <li><a href="assets/pitch-decks/2.05.2026%20-%20$WING%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer">Consumer - WING</a></li>
+                    <li><a href="assets/pitch-decks/2.19.2026%20$FDX%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer">Industrials - FDX</a></li>
+                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true" onclick="return false;">Healthcare - Pending</a></li>
+                    <li><a href="assets/pitch-decks/2.26.2026%20$RELY%20Buy%20vF.pdf" target="_blank" rel="noopener noreferrer">Financial Technology - RELY</a></li>
+                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true" onclick="return false;">Financial Institutions &amp; REITs - Pending</a></li>
+                    <li><a href="#" class="pitch-link-disabled" aria-disabled="true" onclick="return false;">Technology, Media &amp; Telecommunications - Pending</a></li>
+                </div>
             </div>
         </section>
     </div>
 
+    <div class="about-contact-section">
+        <h3>The Weatherhead Fund</h3>
+        <div class="about-contact-links">
+            <a href="mailto:weatherheadfund@case.edu">Email</a> | 
+            <a href="https://www.instagram.com/theweatherheadfund/" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+            <a href="https://www.linkedin.com/company/theweatherheadfund/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
