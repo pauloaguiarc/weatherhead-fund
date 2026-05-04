@@ -12,13 +12,7 @@
     <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
-    <!-- Background Image -->
-    <div class="landing-page fullpage-section">
-        <div class="landing-api-wrapper">
-            <img src="assets/images/wmremove-transformed.jpeg" alt="Background" class="landing-api-img">
-            <img src="assets/images/wmremove-transformed.jpeg" alt="Background bottom" class="landing-api-bottom">
-        </div>
-        
+    <div class="landing-page">
         <!-- Navigation -->
         <nav class="navbar">
             <a href="index.html" class="nav-logo">
@@ -41,9 +35,60 @@
             </ul>
         </nav>
 
-        <!-- Main Content -->
-        <div class="landing-content">
-            <h1 class="landing-title">The Weatherhead Fund</h1>
+        <section class="landing-hero fullpage-section">
+            <div class="landing-api-wrapper">
+                <img src="assets/images/wmremove-transformed.jpeg" alt="Background" class="landing-api-img">
+                <img src="assets/images/wmremove-transformed.jpeg" alt="Background bottom" class="landing-api-bottom">
+            </div>
+
+            <div class="landing-content">
+                <h1 class="landing-title">The Weatherhead Fund</h1>
+            </div>
+        </section>
+
+        <main class="audience-showcase">
+            <section class="showcase-block showcase-right">
+                <div class="showcase-media">
+                    <img src="assets/images/pbl-night-feat.jpeg" alt="Students section image">
+                </div>
+                <div class="showcase-copy">
+                    <h2>Students</h2>
+                    <p>Looking to join? Click here to sign up!</p>
+                    <p>For more information about the mentorship process, <a href="join.html">click here</a>!</p>
+                </div>
+            </section>
+
+            <section class="showcase-block showcase-left">
+                <div class="showcase-media">
+                    <img src="assets/images/Cleveland-Aerial-with-river_0.jpeg" alt="Cleveland aerial view for alumni">
+                </div>
+                <div class="showcase-copy">
+                    <h2>Alumni</h2>
+                    <p>Interested in connecting with current and former members?</p>
+                    <p><a href="https://www.linkedin.com/company/theweatherheadfund/posts/?feedView=all" target="_blank" rel="noopener noreferrer">Join our LinkedIn Group</a></p>
+                </div>
+            </section>
+
+            <section class="showcase-block showcase-right">
+                <div class="showcase-media">
+                    <img src="assets/images/IMG_1327_VSCO.jpg" alt="Professionals section image">
+                </div>
+                <div class="showcase-copy">
+                    <h2>Professionals</h2>
+                    <p>Would you like to speak to the group?</p>
+                    <p><a href="publications.html">Look at our publications</a></p>
+                    <p><a href="professional-outreach.html">Reach out to the Fund</a></p>
+                </div>
+            </section>
+        </main>
+
+        <div class="about-contact-section">
+            <h3>The Weatherhead Fund</h3>
+            <div class="about-contact-links">
+                <a href="mailto:weatherheadfund@case.edu">Email</a> |
+                <a href="https://www.instagram.com/theweatherheadfund/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+                <a href="https://www.linkedin.com/company/theweatherheadfund/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
         </div>
     </div>
 
@@ -68,6 +113,40 @@
                     logo.classList.add('hidden-on-scroll');
                 }
             }, { passive: true });
+        })();
+
+        // Reveal audience cards on first scroll into view
+        (function() {
+            const initShowcaseReveal = () => {
+                const cards = document.querySelectorAll('.showcase-block');
+                if (!cards.length) return;
+
+                // Fallback: reveal immediately when IntersectionObserver is unavailable.
+                if (!('IntersectionObserver' in window)) {
+                    cards.forEach((card) => card.classList.add('revealed'));
+                    return;
+                }
+
+                const observer = new IntersectionObserver((entries, io) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('revealed');
+                        io.unobserve(entry.target); // Reveal only once per card.
+                    });
+                }, {
+                    threshold: 0.2,
+                    root: null,
+                    rootMargin: '0px 0px -40px 0px'
+                });
+
+                cards.forEach((card) => observer.observe(card));
+            };
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initShowcaseReveal, { once: true });
+            } else {
+                initShowcaseReveal();
+            }
         })();
     </script>
     

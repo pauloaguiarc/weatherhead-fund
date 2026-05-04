@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Outreach | The Weatherhead Fund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Weatherhead Fund Logo">
+        </a>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+            <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="for-firms.html" class="nav-link">For Firms</a></li>
+            <li><a href="join.html" class="nav-link">Join / Apply</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <section class="content-section outreach-page">
+            <div class="outreach-grid">
+                <div class="outreach-copy">
+                    <h1>Professional Outreach</h1>
+                    <p>
+                        Thank you for visiting the website! We would love for you to come visit a meeting and speak to the
+                        organization. If you are interested, fill out the form to the right.
+                    </p>
+                    <p>
+                        Choose your most desired meeting to attend. Our meetings are held on the 5th floor of PBL, and
+                        all meetings are in person on Thursdays at 7:00PM.
+                    </p>
+                    <p>
+                        If you have additional questions or comments, attach them in the message section and we will respond shortly.
+                    </p>
+                </div>
+
+                <form class="outreach-form">
+                    <label>Name</label>
+                    <div class="outreach-two-col">
+                        <input type="text" name="firstName" placeholder="First Name (required)" required>
+                        <input type="text" name="lastName" placeholder="Last Name (required)" required>
+                    </div>
+
+                    <label for="company">Company (required)</label>
+                    <input id="company" type="text" name="company" required>
+
+                    <label for="email">Email (required)</label>
+                    <input id="email" type="email" name="email" required>
+
+                    <label for="visitDate">Desired Visit Date</label>
+                    <select id="visitDate" name="visitDate">
+                        <option value="">Select an option</option>
+                        <option value="next-tuesday">Next Tuesday</option>
+                        <option value="two-weeks">Two Weeks Out</option>
+                        <option value="three-weeks">Three Weeks Out</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="about-contact-section">
+        <h3>The Weatherhead Fund</h3>
+        <div class="about-contact-links">
+            <a href="mailto:weatherheadfund@case.edu">Email</a> | 
+            <a href="https://www.instagram.com/theweatherheadfund/" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+            <a href="https://www.linkedin.com/company/theweatherheadfund/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
