@@ -614,7 +614,6 @@ h1, h2, h3, h4, h5, h6 {
 .section-subtitle {
     color: var(--color-gray-medium);
     margin-bottom: 70px;
-    max-width: 600px;
 }
 
 /* Section spacing */
@@ -1115,7 +1114,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     min-height: 320px;
-    object-fit: scale-down;
+    object-fit: cover;
     border-radius: 2px;
 }
 
@@ -1144,6 +1143,116 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(15, 27, 41, 0.1);
     border-radius: 4px;
     background: #fafafa;
+}
+
+/* Full-width hero image */
+.about-full-image {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.about-full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Bold pull-quote intro */
+.about-intro {
+    margin-top: 40px;
+    padding-left: 22px;
+    border-left: 3px solid var(--color-gold);
+}
+
+.about-intro p {
+    font-size: 1.12rem;
+    color: var(--color-gray-dark);
+    line-height: 1.8;
+}
+
+/* Stats band */
+.about-stats-band {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    border-top: 1px solid rgba(15, 27, 41, 0.12);
+    border-bottom: 1px solid rgba(15, 27, 41, 0.12);
+    padding: 34px 0;
+}
+
+.about-stat-item {
+    text-align: center;
+    border-right: 1px solid rgba(15, 27, 41, 0.12);
+    padding: 0 20px;
+}
+
+.about-stat-item:last-child {
+    border-right: none;
+}
+
+.about-stat-number {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    color: var(--color-gold);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.about-stat-label {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-gray-medium);
+}
+
+/* Editorial text sections */
+.about-text-section {
+    margin-top: 56px;
+}
+
+.about-text-section h2 {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-text-section h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: var(--color-gold);
+    margin-top: 8px;
+}
+
+.about-text-section p {
+    color: var(--color-gray-medium);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Secondary image break */
+.about-secondary-image {
+    margin-top: 56px;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.about-secondary-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .about-contact-section {
