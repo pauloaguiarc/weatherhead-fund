@@ -12,9 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Optional: Add scroll effect for navbar if not already handled by CSS hover
+    // Scroll effect only applies on the homepage (landing page),
+    // where the nav starts transparent over the dark hero image.
+    // On inner pages the navbar always stays in .scrolled (white) state.
     const navbar = document.querySelector('.navbar');
-    if (navbar && !navbar.classList.contains('always-dark')) {
+    const isLandingPage = !!document.querySelector('.landing-page');
+    if (navbar && isLandingPage) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');

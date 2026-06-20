@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Success | The Weatherhead Fund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <style>
+        .success-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0 60px;
+        }
+        .metric-card {
+            text-align: center;
+            padding: 30px;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+        }
+        .metric-card h3 {
+            font-family: var(--font-sans);
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 10px;
+        }
+        .metric-card p {
+            font-size: 1rem;
+            color: var(--color-text);
+            font-weight: 500;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid rgba(15, 27, 41, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .testimonial-quote {
+            font-style: italic;
+            color: var(--color-gray-medium);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .testimonial-info h4 {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--color-text);
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        .testimonial-info p {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Weatherhead Fund Logo">
+        </a>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li class="dropdown">
+                <a href="team.html" class="nav-link">Team</a>
+                <ul class="dropdown-content">
+                    <li><a href="team.html">Executive Board</a></li>
+                    <li><a href="vertical-heads.html">Vertical Heads</a></li>
+                </ul>
+            </li>
+            <li><a href="alumni.html" class="nav-link">Alumni</a></li>
+            <li><a href="internship-success.html" class="nav-link active">Internship Success</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="for-firms.html" class="nav-link">For Firms</a></li>
+            <li><a href="join.html" class="nav-link">Join / Apply</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <section class="content-section">
+            <h1>Internship Success</h1>
+            <p class="section-subtitle">
+                The Weatherhead Fund acts as a launchpad for successful careers in investment banking, private equity, and beyond.
+            </p>
+
+            <div class="success-metrics">
+                <div class="metric-card">
+                    <h3>100%</h3>
+                    <p>Placement Rate for Exec Board</p>
+                </div>
+                <div class="metric-card">
+                    <h3>50+</h3>
+                    <p>Alumni on Wall Street</p>
+                </div>
+                <div class="metric-card">
+                    <h3>$1.4M</h3>
+                    <p>AUM Managed by Students</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 20px;">Our Program Structure</h2>
+                <div style="background: #ffffff; border: 1px solid rgba(15, 27, 41, 0.1); padding: 40px; border-radius: 8px;">
+                    <h3 style="color: var(--color-gold); margin-bottom: 15px;">Mentorship & Development</h3>
+                    <p style="color: var(--color-gray-medium); line-height: 1.6; margin-bottom: 20px;">
+                        New members undergo a rigorous training program focused on accounting fundamentals, financial modeling, and valuation methodologies. Our mentorship program pairs younger members with experienced upperclassmen to prepare them for summer internship recruiting.
+                    </p>
+                    <h3 style="color: var(--color-gold); margin-bottom: 15px;">Interview Preparation</h3>
+                    <p style="color: var(--color-gray-medium); line-height: 1.6;">
+                        We conduct regular mock interviews, technical workshops, and behavioral coaching sessions. Our alumni network actively participates in guiding current members through the recruitment timelines for top-tier financial institutions.
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 80px;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Member Testimonials</h2>
+                <p style="color: var(--color-gray-medium);">Hear from our current members and recent alumni about their experience in the Fund.</p>
+                
+                <div class="testimonial-grid">
+                    <!-- Placeholder Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            "The Weatherhead Fund provided me with the technical foundation and professional network necessary to secure my summer internship. The hands-on experience of pitching real companies and defending my thesis to the board was invaluable."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/logo.png" alt="Member Name">
+                            <div class="testimonial-info">
+                                <h4>Jane Doe</h4>
+                                <p>Summer Analyst, Bulge Bracket Bank</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            "Beyond the financial modeling skills, the mentorship I received from upperclassmen helped me navigate the complex recruiting timeline. The Fund truly feels like a supportive community pushing you towards excellence."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/logo.png" alt="Member Name">
+                            <div class="testimonial-info">
+                                <h4>John Smith</h4>
+                                <p>Private Equity Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            "Managing a portion of the University's endowment gave me real-world responsibility that stood out in interviews. I was able to discuss portfolio strategy and asset allocation with incredible depth."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/logo.png" alt="Member Name">
+                            <div class="testimonial-info">
+                                <h4>Alex Johnson</h4>
+                                <p>Investment Banking Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="about-contact-section">
+        <h3>The Weatherhead Fund</h3>
+        <div class="about-contact-links">
+            <a href="mailto:weatherheadfund@case.edu">Email</a> | 
+            <a href="https://www.instagram.com/theweatherheadfund/" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+            <a href="https://www.linkedin.com/company/theweatherheadfund/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
