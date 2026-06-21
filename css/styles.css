@@ -828,7 +828,7 @@ h1, h2, h3, h4, h5, h6 {
 ========================= */
 
 .publications-page {
-    max-width: 900px;
+    max-width: 1100px;
 }
 
 .publications-block {
@@ -853,8 +853,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .pitch-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     margin-top: 24px;
 }
 
