@@ -1,6 +1,7 @@
 /* Global Vars */
 :root {
     --color-bg: #ffffff;
+    --color-surface: #ffffff;
     --color-text: #0f1b29;
     --color-gold: #D4AF37; /* Classic gold */
     --color-gold-hover: #b8962e;
